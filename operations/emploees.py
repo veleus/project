@@ -29,7 +29,7 @@ def update_task(db: Session, data: employee, id: int):
         exp.Country = data.County
         exp.Login = data.Login
         exp.Password = data.Password
-        exp.Role = data.Role
+        exp.Role_User = data.Role
         db.commit()
         db.refresh(exp)
         return exp
