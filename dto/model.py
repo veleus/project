@@ -49,7 +49,7 @@ class Employee(BaseModel):
     County: str
     Login: str
     Password: str
-    Role: str
+    Role: int
 class ReadnisStagesToMaterial(BaseModel):
     ID_ProdExe: int
     ID_Material: int
