@@ -8,7 +8,7 @@ def get_task(db: Session, user_id:str):
 
 def create_task(db: Session, data: employee):
     try:
-        exp = User(Full_Name = data.Full_Name, Phone = data.Phone, Addres = data.Address, Email = data.Email, Country = data.County, Login = data.Login, Password = data.Password, Role = data.Role)
+        exp = User(Full_Name = data.Full_Name, Phone = data.Phone, Addres = data.Address, Email = data.Email, Country = data.County, Login = data.Login, Password = data.Password, Role_User = data.Role)
         db.add(exp)
         db.commit()
         db.refresh(exp)
